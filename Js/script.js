@@ -18,7 +18,6 @@ let workoutPlan = [];
 //Iteration over the object
 for (items in option) {
     let optidx = randomNum(option[items].length);
-    console.log(optidx);
     switch(items) {
         case 'workout':
             workoutPlan.push(`You should work on ${option[items][optidx]}.`);
