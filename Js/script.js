@@ -9,7 +9,7 @@ const randomNum = (len) => {
 const option = {
     workout: ['Shoulder', 'Leg', 'Chest', 'Biceps', 'Triceps', 'Lat', 'Abs'],
     days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-    pre-workout: ['Banana-1', 'oats-50g', 'Caffeine-160mgm', 'Thick Shake']
+    preWorkout: ['Banana-1', 'oats-50g', 'Caffeine-160mgm', 'Thick Shake']
 }
 
 //Has the output
@@ -26,7 +26,7 @@ for (items in option) {
         case 'days':
             workoutPlan.push(`On ${option[items][optidx]}.`);
             break
-        case 'pre-workout':
+        case 'preWorkout':
             workoutPlan.push(`Before going to the gym eat ${option[items][optidx]} as a pre-workout meal.`);
             break
         default:
