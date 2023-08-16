@@ -9,7 +9,7 @@ const randomNum = (len) => {
 const option = {
     workout: ['Shoulder', 'Leg', 'Chest', 'Biceps', 'Triceps', 'Lat', 'Abs'],
     days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-    protien: ['Plant based', 'Animal based', 'Organic', 'Lean Mass']
+    preWorkout: ['Banana-1', 'oats-50g', 'Caffeine-160mgm', 'Thick Shake']
 }
 
 //Has the output
@@ -18,7 +18,6 @@ let workoutPlan = [];
 //Iteration over the object
 for (items in option) {
     let optidx = randomNum(option[items].length);
-    console.log(optidx);
     switch(items) {
         case 'workout':
             workoutPlan.push(`You should work on ${option[items][optidx]}.`);
@@ -26,8 +25,8 @@ for (items in option) {
         case 'days':
             workoutPlan.push(`On ${option[items][optidx]}.`);
             break
-        case 'protien':
-            workoutPlan.push(`While doing this, consume ${option[items][optidx]} protien.`);
+        case 'preWorkout':
+            workoutPlan.push(`Before going to the gym eat ${option[items][optidx]} as a pre-workout meal.`);
             break
         default:
             console.log('Error'); 
